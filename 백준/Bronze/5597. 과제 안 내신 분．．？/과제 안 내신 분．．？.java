@@ -1,26 +1,19 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        HashSet<Integer> a = new HashSet<>(30);
-        HashSet<Integer> b = new HashSet<>(28);
-        for (int i = 1; i <= 30; i++) {
-            a.add(i);
-        }
-
+        Set<Integer> set = new HashSet<>();
         for (int i = 0; i < 28; i++) {
-            int n = scanner.nextInt();
-            b.add(n);
+            set.add(scanner.nextInt());
         }
-
-        a.removeAll(b);
-
-        List<Integer> answer = new ArrayList<>(a);
-        Collections.sort(answer);
-        for (int num : answer) {
-            System.out.println(num);
+        for (int i = 1; i <= 30; i++) {
+            if (!set.contains(i)) {
+                System.out.println(i);
+            }
         }
 
         scanner.close();
