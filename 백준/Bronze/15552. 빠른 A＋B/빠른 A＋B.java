@@ -1,5 +1,3 @@
-//package 백준.반복문.boj_15552;
-
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -9,12 +7,15 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int t = Integer.parseInt(br.readLine());
+
         for (int i = 0; i < t; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
+
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            bw.write((a + b) + "\n");
+            bw.write(String.valueOf(a + b) + "\n");
         }
+
         bw.flush();
         bw.close();
         br.close();
