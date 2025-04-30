@@ -9,8 +9,8 @@ public class Main {
         String input = br.readLine();
 
         int sum = 0;
+        char[] inputArr = input.toCharArray();
         for (int i = 0; i < input.length(); i++) {
-            char[] inputArr = input.toCharArray();
             sum += inputArr[i] - '0';
         }
         bw.write(sum + "\n");
