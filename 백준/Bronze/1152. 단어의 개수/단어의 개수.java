@@ -10,7 +10,7 @@ public class Main {
         if (input.trim().isEmpty()) {
             bufferedWriter.write("0");
         } else {
-            bufferedWriter.write(String.valueOf(input.trim().split("\\s+").length));
+            bufferedWriter.write(String.valueOf(input.trim().split(" ").length));
         }
 
         bufferedWriter.flush();
