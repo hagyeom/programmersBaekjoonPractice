@@ -1,15 +1,20 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine().trim();
-        sc.close();
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        if (str.isEmpty()) {
-            System.out.println(0);
+        String input = bufferedReader.readLine();
+
+        if (input.trim().isEmpty()) {
+            bufferedWriter.write("0");
         } else {
-            System.out.println(str.split(" ").length);
+            bufferedWriter.write(String.valueOf(input.trim().split("\\s+").length));
         }
+
+        bufferedWriter.flush();
+        bufferedWriter.close();
+        bufferedReader.close();
     }
 }
