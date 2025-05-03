@@ -11,28 +11,46 @@ public class Main {
         int totalTime = 0;
         for (int i = 0; i < s.length(); i++) {
             switch (s.charAt(i)) {
-                case 'A', 'B', 'C':
+                case 'A':
+                case 'B':
+                case 'C':
                     totalTime += 3;
                     break;
-                case 'D', 'E', 'F':
+                case 'D':
+                case 'E':
+                case 'F':
                     totalTime += 4;
                     break;
-                case 'G', 'H', 'I':
+                case 'G':
+                case 'H':
+                case 'I':
                     totalTime += 5;
                     break;
-                case 'J', 'K', 'L':
+                case 'J':
+                case 'K':
+                case 'L':
                     totalTime += 6;
                     break;
-                case 'M', 'N', 'O':
+                case 'M':
+                case 'N':
+                case 'O':
                     totalTime += 7;
                     break;
-                case 'P', 'Q', 'R', 'S':
+                case 'P':
+                case 'Q':
+                case 'R':
+                case 'S':
                     totalTime += 8;
                     break;
-                case 'T', 'U', 'V':
+                case 'T':
+                case 'U':
+                case 'V':
                     totalTime += 9;
                     break;
-                case 'W', 'X', 'Y', 'Z':
+                case 'W':
+                case 'X':
+                case 'Y':
+                case 'Z':
                     totalTime += 10;
                     break;
             }
